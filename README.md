@@ -69,7 +69,6 @@ illustrative temperature trend. It is not observed weather or a GCM projection.
 This wet-climate demonstration has annual rainfall of about 2,175-4,188 mm;
 the two `.wgn` files summarize the same daily example series.
 Warmup uses normal fixed management; RBF feedback starts in 2005.
-It contains no study-basin observations, fitted policies or optimization results.
 It demonstrates execution, not calibration or reproduction of paper results.
 Use a fresh output directory for this extended case; checkpoints from the
 previous short case cannot be resumed with different inputs and years.
