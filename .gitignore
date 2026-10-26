@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# SWAT / Fortran build artifacts
+*.exe
+*.dll
+*.obj
+*.mod
+*.o
+*.lib
+*.exp
+*.pdb
+
+# Runtime outputs
+build/
+results/
+audit_local/
+*.npz
+*.pkl
+optimizer.lock
+STOP
+my_case*.json
+*private*.json
+*.out
+*.log
+*_dps_eval.out
+pareto_solutions*.csv
+convergence_history*.csv
+nsga2_run_config*.json
+_parallel_runs/
+B=*_parallel_runs/
+base10000_parallel_runs/
+worker_*/
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.rar
+*.7z

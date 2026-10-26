@@ -1,0 +1,27 @@
+{
+  "backend": "minimal",
+  "evaluation_years": [2002, 2007],
+  "warmup_years": [2000, 2001],
+  "outlet_reach": 3,
+  "state_lower": [0, 0, 0, 0, 0, 0, 0, 0],
+  "state_upper": [500, 10, 300, 600, 6000, 80, 1.5, 600],
+  "annual_bounds": [0.2, 1.2],
+  "phase_lower": [0.3, 0.1, 0.3],
+  "phase_upper": [0.5, 0.3, 0.5],
+  "phase_reference": [0.4, 0.2, 0.4],
+  "grain_floor_fraction": 0.95,
+  "TN_limit_mg_L": 4.0,
+  "TN_max_exceedance_fraction": 0.25,
+  "HV_reference_scaled": [1.2, 0.0, 1.2, 0.0],
+  "minimal_case": {
+    "subbasins": [1, 1, 2, 2, 3, 3],
+    "HRU_area_ha": [5, 7, 6, 9, 8, 10],
+    "baseline_N_kg_ha": [170, 190, 180, 200, 160, 185],
+    "baseline_phase_shares": [0.5, 0.3, 0.2],
+    "application_months": [4, 6, 8],
+    "fixed_manure_N_kg_ha_year": 20,
+    "fixed_domestic_N_kg_month": 8,
+    "annual_precipitation_mm": 950,
+    "background_flow_volume_m3_month": 25000
+  }
+}

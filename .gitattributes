@@ -1,0 +1,7 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+requirements.txt text eol=lf
+# Preserve the exact verified Fortran snapshot bytes on every platform.
+swat_source/dps_b8k3/* -text
