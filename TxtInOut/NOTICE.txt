@@ -1,0 +1,7 @@
+Minimal example. No research-basin inputs or observations are included.
+Areas, soil settings, management and daily weather were specified for this example.
+File layouts and standard database excerpts are adapted from the public SWATdata demo:
+https://github.com/chrisschuerz/SWATdata
+Reference archive: inst/extdata/2012_rev637_project.zip
+The corresponding third-party GPLv3 terms are preserved in COPYING.txt.
+This attribution does not assign a new license to the SWAT-DPS source code.

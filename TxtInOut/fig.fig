@@ -1,0 +1,10 @@
+subbasin       1     1     1
+          000010000.sub
+route          2     2     1     1
+          000010000.rte000010000.swq
+subbasin       1     3     2
+          000020000.sub
+add            5     4     2     3
+route          2     5     2     4
+          000020000.rte000020000.swq
+finish         0
