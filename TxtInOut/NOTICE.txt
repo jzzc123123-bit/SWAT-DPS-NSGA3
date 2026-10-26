@@ -1,5 +1,12 @@
 Minimal example. No research-basin inputs or observations are included.
 Areas, soil settings, management and daily weather were specified for this example.
+Weather coverage: 2000-2050 inclusive; 18,628 daily records per weather file.
+Warmup: 2000-2004; evaluation and annual RBF feedback: 2005-2050.
+Weather uses seed 20261026, variable rain events and wet/dry year clusters.
+This wet-climate example spans approximately 2175-4188 mm annual rainfall.
+Weather-generator monthly statistics summarize the same illustrative daily inputs.
+Temperature has daily fluctuations and an illustrative 0.02 deg C/year trend.
+These illustrative series are neither observations nor GCM climate projections.
 File layouts and standard database excerpts are adapted from the public SWATdata demo:
 https://github.com/chrisschuerz/SWATdata
 Reference archive: inst/extdata/2012_rev637_project.zip

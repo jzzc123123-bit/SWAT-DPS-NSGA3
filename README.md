@@ -5,7 +5,7 @@ and one Python script for eight-state RBF-DPS optimization with NSGA-III.
 
 ```text
 SWAT_Source/       complete modified SWAT2016 Rev.664 source (312 files)
-TxtInOut/          minimum example: 2 subbasins, 2 agricultural HRUs
+TxtInOut/          example: 2 subbasins, 2 agricultural HRUs, 2000-2050
 NSGA_III.py        compilation, SWAT execution and NSGA-III optimization
 requirements.txt  Python dependencies
 ```
@@ -18,12 +18,12 @@ on Linux. Run these commands from the repository root:
 ```sh
 python -m pip install -r requirements.txt
 python NSGA_III.py --build-only
-python NSGA_III.py --population 12 --generations 3 --workers 2
+python NSGA_III.py --population 12 --generations 3 --workers 2 --output results/example_long
 ```
 
 Every evaluation invokes the compiled SWAT executable. There is no surrogate
 or simplified replacement model. Compilation writes to `build/`; optimization
-writes to `results/run/`. These generated files are not distributed.
+writes to the selected results directory. These generated files are not distributed.
 
 For a larger search, use a new output directory:
 
@@ -59,11 +59,20 @@ The example HV reference is `[1.2, 0, 1.2, 0]` in baseline-relative coordinates.
 
 ## Minimum case
 
-The case runs 2000-2005, with 2000-2001 warmup and 2002-2005 evaluation.
+The case runs 2000-2050: 2000-2004 is warmup and 2005-2050 is evaluation
+(46 years, 552 outlet months and 45 interannual action transitions).
 It has scheduled maize planting/harvest, three urea applications per year,
-fixed manure and phosphorus inputs, and independently specified daily weather.
+fixed manure and phosphorus inputs, and 18,628 daily records per weather file.
+The independent example weather uses seed 20261026, variable rain-event dates
+and amounts, wet/dry year clusters, daily temperature fluctuations and an
+illustrative temperature trend. It is not observed weather or a GCM projection.
+This wet-climate demonstration has annual rainfall of about 2,175-4,188 mm;
+the two `.wgn` files summarize the same daily example series.
+Warmup uses normal fixed management; RBF feedback starts in 2005.
 It contains no study-basin observations, fitted policies or optimization results.
 It demonstrates execution, not calibration or reproduction of paper results.
+Use a fresh output directory for this extended case; checkpoints from the
+previous short case cannot be resumed with different inputs and years.
 
 Input layouts and standard database excerpts follow the public
 [SWATdata demo](https://github.com/chrisschuerz/SWATdata).

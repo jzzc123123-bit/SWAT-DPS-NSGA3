@@ -5,7 +5,7 @@ Independent illustrative weather and management; no study observations
 
 General Information/Watershed Configuration:
 fig.fig
-               6    | NBYR : Number of years simulated
+              51    | NBYR : Number of years simulated
             2000    | IYR : Beginning year of simulation
                1    | IDAF : Beginning julian day of simulation
              365    | IDAL : Ending julian day of simulation
@@ -57,7 +57,7 @@ Special Projects:
                     | CALFILE: auto-calibration parameter file
 Output Information:
                0    | IPRINT: print code (month, day, year)
-               2    | NYSKIP: number of years to skip output printing/summarization
+               5    | NYSKIP: number of years to skip output printing/summarization
                0    | ILOG: streamflow print code: 1=print log of streamflow
                0    | IPRP: print code for output.pst file: 1= print pesticide output
 Starting Output Variable Section

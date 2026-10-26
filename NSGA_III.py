@@ -32,8 +32,8 @@ SEED=20261007
 # Illustrative fixed inputs, not fitted study-basin values. To use your own
 # project, update years, outlet, fixed state bounds and hydrological values.
 CASE={'backend': 'swat',
- 'evaluation_years': [2002, 2005],
- 'warmup_years': [2000, 2001],
+ 'evaluation_years': [2005, 2050],
+ 'warmup_years': [2000, 2004],
  'outlet_reach': 2,
  'state_lower': [0, 0, 0, 0, 0, 0, 0, 0],
  'state_upper': [500, 10, 300, 600, 20000, 80, 1.5, 600],
