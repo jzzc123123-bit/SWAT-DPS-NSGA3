@@ -78,6 +78,3 @@ Input layouts and standard database excerpts follow the public
 [SWATdata demo](https://github.com/chrisschuerz/SWATdata).
 Attribution and the applicable third-party terms are in `TxtInOut/NOTICE.txt`
 and `TxtInOut/COPYING.txt`. This does not assign a new license to the SWAT-DPS code.
-
-The source's parameter-audit loop uses the actual subbasin count; physical
-process equations and the eight-state DPS contract are retained.
